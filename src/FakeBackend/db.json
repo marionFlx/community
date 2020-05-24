@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Julien",
+      "signupDate": "2019-02-18T08:02:00Z",
+      "interests": [
+        { "id": 1, "label": "Gym", "type": "Passion" },
+        { "id": 2, "label": "Triton", "type": "Job" },
+        { "id": 3, "label": "Netflix", "type": "Movie" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pierre",
+      "signupDate": "2020-02-18T08:02:00Z",
+      "interests": [
+        { "id": 4, "label": "Toulouse", "type": "Travel" },
+        { "id": 5, "label": "Ubisoft", "type": "Work" },
+        { "id": 6, "label": "Poker", "type": "Activity" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Alexandre",
+      "signupDate": "2019-02-18T08:02:00Z",
+      "interests": [
+        { "id": 7, "label": "Travel", "type": "Passion" },
+        { "id": 8, "label": "Toronto", "type": "Travel" },
+        { "id": 3, "label": "Netflix", "type": "Activity" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Marion",
+      "signupDate": "2018-02-18T08:02:00Z",
+      "interests": [
+        { "id": 7, "label": "Travel", "type": "Passion" },
+        { "id": 9, "label": "Entrepreneur", "type": "job" },
+        { "id": 3, "label": "Netflix", "type": "Activity" }
+      ]
+    }
+  ]
+}
