@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { MemberModel } from '@/models/MemberModel';
 import Member from '@/components/Member.vue';
 import { useMemberService } from '@/composables/MemberService';
@@ -17,12 +17,9 @@ export default defineComponent({
     Member
   },
 
-  setup() {
-    const members = ref<Array<MemberModel>>([]);
+  async setup() {
     const memberService = useMemberService();
-    onMounted(async () => {
-      members.value = await memberService.list();
-    });
+    const members = ref<Array<MemberModel>>(await memberService.list());
     return { members };
   }
 });

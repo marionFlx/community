@@ -61,8 +61,25 @@ describe('Maplr Community', () => {
 
   it('should display a member list', () => {
     cy.visit('/');
+    // loading
+    cy.contains('div', 'Loading...');
     cy.wait('@getMembers');
     cy.get('h2').should('have.length', 2);
+  });
+
+  it('should display a loading error', () => {
+    // overriding the response to have an error
+    cy.route({
+      method: 'GET',
+      url: '/members?status=ACTIVE',
+      status: 404,
+      response: []
+    }).as('getMembersError');
+    cy.visit('/');
+    // loading
+    cy.contains('div', 'Loading...');
+    cy.wait('@getMembersError');
+    cy.contains('div.alert', 'An error occurred while loading.');
   });
 
   it('should display interests', () => {

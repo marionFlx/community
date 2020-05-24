@@ -3,13 +3,21 @@
     <Navbar />
     <div class="container" style="margin-top: 70px;">
       <h1>Maplr Community</h1>
-      <Members />
+      <div v-if="error" class="alert alert-danger">
+        An error occurred while loading.
+      </div>
+      <Suspense v-else>
+        <Members />
+        <template #fallback>
+          Loading...
+        </template>
+      </Suspense>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onErrorCaptured, ref } from 'vue';
 import Navbar from '@/components/Navbar.vue';
 import Members from '@/views/Members.vue';
 
@@ -19,6 +27,15 @@ export default defineComponent({
   components: {
     Navbar,
     Members
+  },
+
+  setup() {
+    const error = ref(false);
+    onErrorCaptured(() => {
+      error.value = true;
+      return true;
+    });
+    return { error };
   }
 });
 </script>
