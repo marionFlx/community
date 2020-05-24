@@ -1,5 +1,7 @@
 import { mount } from '@vue/test-utils';
 import Member from '@/components/Member.vue';
+import Interest from '@/components/Interest.vue';
+import { InterestTypeEnum } from '@/enums/InterestTypeEnum';
 
 describe('Member.vue', () => {
   test('should display a member name and its interests', () => {
@@ -7,9 +9,9 @@ describe('Member.vue', () => {
       id: 12,
       name: 'Mathias',
       interests: [
-        { id: 1, label: 'Netflix' },
-        { id: 2, label: 'Chill' },
-        { id: 3, label: 'Cuisine' }
+        { id: 1, label: 'Netflix', type: InterestTypeEnum.ACTIVITY },
+        { id: 2, label: 'Chill', type: InterestTypeEnum.JOB },
+        { id: 3, label: 'Cuisine', type: InterestTypeEnum.PASSION }
       ],
       signupDate: '2016-02-18T08:02:00Z'
     };
@@ -27,11 +29,8 @@ describe('Member.vue', () => {
     const signupDate = wrapper.get('p');
     // The p element should contain the signupDate instant transformed by the fromNow function
     expect(signupDate.text()).toContain('ago');
-    const interests = wrapper.findAll('li');
-    // You should have one li elements per interest
+    const interests = wrapper.findAllComponents(Interest);
+    // You should have one Interest component per Interest
     expect(interests).toHaveLength(3);
-    expect(interests[0].text()).toContain('Netflix');
-    expect(interests[1].text()).toContain('Chill');
-    expect(interests[2].text()).toContain('Cuisine');
   });
 });

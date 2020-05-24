@@ -7,6 +7,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { MemberModel } from '@/models/MemberModel';
+import { InterestTypeEnum } from '@/enums/InterestTypeEnum';
 import Member from '@/components/Member.vue';
 
 export default defineComponent({
@@ -23,9 +24,9 @@ export default defineComponent({
         name: 'Julien',
         signupDate: '2019-02-18T08:02:00Z',
         interests: [
-          { id: 1, label: 'Gym' },
-          { id: 2, label: 'Triton' },
-          { id: 3, label: 'Netflix' }
+          { id: 1, label: 'Gym', type: InterestTypeEnum.SPORT },
+          { id: 2, label: 'Triton', type: InterestTypeEnum.JOB },
+          { id: 3, label: 'Netflix', type: InterestTypeEnum.ACTIVITY }
         ]
       },
       {
@@ -33,9 +34,9 @@ export default defineComponent({
         name: 'Pierre',
         signupDate: '2020-02-18T08:02:00Z',
         interests: [
-          { id: 4, label: 'Trade' },
-          { id: 5, label: 'Ubisoft' },
-          { id: 6, label: 'Poker' }
+          { id: 4, label: 'Toulouse', type: InterestTypeEnum.FROM },
+          { id: 5, label: 'Ubisoft', type: InterestTypeEnum.JOB },
+          { id: 6, label: 'Poker', type: InterestTypeEnum.ACTIVITY }
         ]
       },
       {
@@ -43,9 +44,9 @@ export default defineComponent({
         name: 'Alexandre',
         signupDate: '2019-02-18T08:02:00Z',
         interests: [
-          { id: 7, label: 'Travel' },
-          { id: 8, label: 'Toronto' },
-          { id: 3, label: 'Netflix' }
+          { id: 7, label: 'Travel', type: InterestTypeEnum.PASSION },
+          { id: 8, label: 'Toronto', type: InterestTypeEnum.TRAVEL },
+          { id: 3, label: 'Netflix', type: InterestTypeEnum.ACTIVITY }
         ]
       },
       {
@@ -53,9 +54,9 @@ export default defineComponent({
         name: 'Marion',
         signupDate: '2018-02-18T08:02:00Z',
         interests: [
-          { id: 7, label: 'Travel' },
-          { id: 9, label: 'Entrepreneurship' },
-          { id: 3, label: 'Netflix' }
+          { id: 7, label: 'Travel', type: InterestTypeEnum.PASSION },
+          { id: 9, label: 'Entrepreneur', type: InterestTypeEnum.JOB },
+          { id: 3, label: 'Netflix', type: InterestTypeEnum.ACTIVITY }
         ]
       }
     ]);

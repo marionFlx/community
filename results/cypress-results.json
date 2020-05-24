@@ -1,13 +1,13 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 4,
-    "passes": 4,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2020-05-23T23:43:31.560Z",
-    "end": "2020-05-23T23:43:32.733Z",
-    "duration": 1173
+    "start": "2020-05-24T02:37:15.799Z",
+    "end": "2020-05-24T02:37:17.270Z",
+    "duration": 1471
   },
   "suites": [
     {
@@ -16,28 +16,35 @@
         {
           "fullTitle": "Maplr Community should display title on home page",
           "title": "should display title on home page",
-          "duration": 441,
+          "duration": 526,
           "result": "passed",
           "err": {}
         },
         {
           "fullTitle": "Maplr Community should display a navbar",
           "title": "should display a navbar",
-          "duration": 176,
+          "duration": 139,
           "result": "passed",
           "err": {}
         },
         {
           "fullTitle": "Maplr Community should display a navbar collapsed on small screen",
           "title": "should display a navbar collapsed on small screen",
-          "duration": 252,
+          "duration": 291,
           "result": "passed",
           "err": {}
         },
         {
           "fullTitle": "Maplr Community should display a member list",
           "title": "should display a member list",
-          "duration": 228,
+          "duration": 126,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Maplr Community should display interests",
+          "title": "should display interests",
+          "duration": 334,
           "result": "passed",
           "err": {}
         }
@@ -50,28 +57,35 @@
     {
       "fullTitle": "Maplr Community should display title on home page",
       "title": "should display title on home page",
-      "duration": 441,
+      "duration": 526,
       "result": "passed",
       "err": {}
     },
     {
       "fullTitle": "Maplr Community should display a navbar",
       "title": "should display a navbar",
-      "duration": 176,
+      "duration": 139,
       "result": "passed",
       "err": {}
     },
     {
       "fullTitle": "Maplr Community should display a navbar collapsed on small screen",
       "title": "should display a navbar collapsed on small screen",
-      "duration": 252,
+      "duration": 291,
       "result": "passed",
       "err": {}
     },
     {
       "fullTitle": "Maplr Community should display a member list",
       "title": "should display a member list",
-      "duration": 228,
+      "duration": 126,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Maplr Community should display interests",
+      "title": "should display interests",
+      "duration": 334,
       "result": "passed",
       "err": {}
     }
