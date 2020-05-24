@@ -1,4 +1,6 @@
-# maplr-vue-test
+# Community
+
+Vue 3 Project
 
 ## Project setup
 ```
