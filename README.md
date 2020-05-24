@@ -1,34 +1,16 @@
-# maplr-vue-test
+# Community (Vue 3 Boilerplate)
 
-## Project setup
+Vue 3.0 starter project for Maplr Community
+Using Typescript
+
+## Setup
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
 ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## License
+his project is licensed under the MIT License - [MIT](https://choosealicense.com/licenses/mit/)
