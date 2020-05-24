@@ -12,7 +12,7 @@
     "eslint": "eslint",
     "format": "prettier --write \"{src,tests}/**/*.+(vue|ts|js|json|html|css)\"",
     "postinstall": "yarn format",
-    "fakeBackend": "json-server -p 3007 -w ./src/FakeBackend/db.json"
+    "start-fakebackend": "json-server -p 3007 -w ./src/FakeBackend/db.json"
   },
   "dependencies": {
     "axios": "0.19.2",

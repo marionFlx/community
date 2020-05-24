@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1590293474562,
+  "startTime": 1590294088970,
   "success": false,
   "testResults": [
     {
@@ -36,45 +36,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1590293483770,
-        "start": 1590293477177
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/views/Members.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Members.vue"
-          ],
-          "duration": 30,
-          "failureMessages": [],
-          "fullName": "Members.vue should display every member name in a title",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should display every member name in a title"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1590293483858,
-        "start": 1590293477247
+        "end": 1590294093330,
+        "start": 1590294091266
       },
       "snapshot": {
         "added": 0,
@@ -91,7 +54,7 @@
           "ancestorTitles": [
             "Member.vue"
           ],
-          "duration": 64,
+          "duration": 41,
           "failureMessages": [],
           "fullName": "Member.vue should display a member name and its interests",
           "location": null,
@@ -106,12 +69,49 @@
     {
       "failureMessage": null,
       "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1590294093333,
+        "start": 1590294091237
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/views/Members.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Members.vue"
+          ],
+          "duration": 39,
+          "failureMessages": [],
+          "fullName": "Members.vue should display every member name in a title",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should display every member name in a title"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
       "numPassingTests": 3,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1590293484071,
-        "start": 1590293477166
+        "end": 1590294093460,
+        "start": 1590294091272
       },
       "snapshot": {
         "added": 0,
@@ -128,7 +128,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 83,
+          "duration": 84,
           "failureMessages": [],
           "fullName": "App.vue renders a title",
           "location": null,
@@ -140,7 +140,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 18,
+          "duration": 14,
           "failureMessages": [],
           "fullName": "App.vue renders the navbar",
           "location": null,
@@ -152,7 +152,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 10,
+          "duration": 8,
           "failureMessages": [],
           "fullName": "App.vue renders the members list",
           "location": null,
@@ -167,49 +167,12 @@
     {
       "failureMessage": null,
       "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1590293484409,
-        "start": 1590293483836
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/services/MemberService.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "useMemberService"
-          ],
-          "duration": 70,
-          "failureMessages": [],
-          "fullName": "useMemberService should list members",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should list members"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
       "numPassingTests": 2,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1590293484462,
-        "start": 1590293483941
+        "end": 1590294093747,
+        "start": 1590294093404
       },
       "snapshot": {
         "added": 0,
@@ -226,7 +189,7 @@
           "ancestorTitles": [
             "Interest.vue"
           ],
-          "duration": 12,
+          "duration": 19,
           "failureMessages": [],
           "fullName": "Interest.vue should display an image and a legend",
           "location": null,
@@ -238,7 +201,7 @@
           "ancestorTitles": [
             "Interest.vue"
           ],
-          "duration": 5,
+          "duration": 11,
           "failureMessages": [],
           "fullName": "Interest.vue should emit an event on click",
           "location": null,
@@ -257,8 +220,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1590293484508,
-        "start": 1590293484227
+        "end": 1590294093788,
+        "start": 1590294093378
       },
       "snapshot": {
         "added": 0,
@@ -269,19 +232,19 @@
         "updated": 0,
         "uncheckedKeys": []
       },
-      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/utils/FromNow.spec.ts",
+      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/services/MemberService.spec.ts",
       "testResults": [
         {
           "ancestorTitles": [
-            "FromNow"
+            "useMemberService"
           ],
-          "duration": 8,
+          "duration": 113,
           "failureMessages": [],
-          "fullName": "FromNow should transform a date",
+          "fullName": "useMemberService should list members",
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "should transform a date"
+          "title": "should list members"
         }
       ],
       "skipped": false,
@@ -294,8 +257,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1590293484733,
-        "start": 1590293484444
+        "end": 1590294093906,
+        "start": 1590294093541
       },
       "snapshot": {
         "added": 0,
@@ -312,7 +275,7 @@
           "ancestorTitles": [
             "Navbar.vue"
           ],
-          "duration": 10,
+          "duration": 15,
           "failureMessages": [],
           "fullName": "Navbar.vue should toggle the class on click",
           "location": null,
@@ -323,181 +286,47 @@
       ],
       "skipped": false,
       "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1590294094015,
+        "start": 1590294093779
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/tests/unit/utils/FromNow.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "FromNow"
+          ],
+          "duration": 3,
+          "failureMessages": [],
+          "fullName": "FromNow should transform a date",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should transform a date"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
     }
   ],
   "wasInterrupted": false,
   "coverageMap": {
-    "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/views/Members.vue": {
-      "path": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/views/Members.vue",
-      "statementMap": {
-        "0": {
-          "start": {
-            "line": 2,
-            "column": 0
-          },
-          "end": {
-            "line": 2,
-            "column": null
-          }
-        },
-        "1": {
-          "start": {
-            "line": 4,
-            "column": 0
-          },
-          "end": {
-            "line": 4,
-            "column": null
-          }
-        },
-        "2": {
-          "start": {
-            "line": 5,
-            "column": 0
-          },
-          "end": {
-            "line": 5,
-            "column": null
-          }
-        },
-        "3": {
-          "start": {
-            "line": 7,
-            "column": 0
-          },
-          "end": {
-            "line": 7,
-            "column": null
-          }
-        },
-        "4": {
-          "start": {
-            "line": 14,
-            "column": 0
-          },
-          "end": {
-            "line": 14,
-            "column": null
-          }
-        },
-        "5": {
-          "start": {
-            "line": 15,
-            "column": 0
-          },
-          "end": {
-            "line": 15,
-            "column": null
-          }
-        },
-        "6": {
-          "start": {
-            "line": 16,
-            "column": 0
-          },
-          "end": {
-            "line": 16,
-            "column": null
-          }
-        },
-        "7": {
-          "start": {
-            "line": 17,
-            "column": 0
-          },
-          "end": {
-            "line": 19,
-            "column": null
-          }
-        },
-        "8": {
-          "start": {
-            "line": 18,
-            "column": 0
-          },
-          "end": {
-            "line": 18,
-            "column": null
-          }
-        },
-        "9": {
-          "start": {
-            "line": 20,
-            "column": 0
-          },
-          "end": {
-            "line": 20,
-            "column": null
-          }
-        }
-      },
-      "fnMap": {
-        "0": {
-          "name": "(anonymous_0)",
-          "decl": {
-            "start": {
-              "line": 14,
-              "column": 0
-            },
-            "end": {
-              "line": 14,
-              "column": null
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 14,
-              "column": 0
-            },
-            "end": {
-              "line": 21,
-              "column": null
-            }
-          }
-        },
-        "1": {
-          "name": "(anonymous_1)",
-          "decl": {
-            "start": {
-              "line": 17,
-              "column": 0
-            },
-            "end": {
-              "line": 17,
-              "column": null
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 17,
-              "column": 0
-            },
-            "end": {
-              "line": 19,
-              "column": null
-            }
-          }
-        }
-      },
-      "branchMap": {},
-      "s": {
-        "0": 2,
-        "1": 2,
-        "2": 2,
-        "3": 2,
-        "4": 4,
-        "5": 4,
-        "6": 4,
-        "7": 4,
-        "8": 9,
-        "9": 4
-      },
-      "f": {
-        "0": 4,
-        "1": 4
-      },
-      "b": {}
-    },
     "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/components/Member.vue": {
       "path": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/components/Member.vue",
       "statementMap": {
@@ -1011,6 +840,177 @@
           2
         ]
       }
+    },
+    "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/views/Members.vue": {
+      "path": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/views/Members.vue",
+      "statementMap": {
+        "0": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": null
+          }
+        },
+        "1": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": null
+          }
+        },
+        "2": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": null
+          }
+        },
+        "3": {
+          "start": {
+            "line": 7,
+            "column": 0
+          },
+          "end": {
+            "line": 7,
+            "column": null
+          }
+        },
+        "4": {
+          "start": {
+            "line": 14,
+            "column": 0
+          },
+          "end": {
+            "line": 14,
+            "column": null
+          }
+        },
+        "5": {
+          "start": {
+            "line": 15,
+            "column": 0
+          },
+          "end": {
+            "line": 15,
+            "column": null
+          }
+        },
+        "6": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": null
+          }
+        },
+        "7": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": null
+          }
+        },
+        "8": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": null
+          }
+        },
+        "9": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 20,
+            "column": null
+          }
+        }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 14,
+              "column": null
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 21,
+              "column": null
+            }
+          }
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": {
+            "start": {
+              "line": 17,
+              "column": 0
+            },
+            "end": {
+              "line": 17,
+              "column": null
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": null
+            }
+          }
+        }
+      },
+      "branchMap": {},
+      "s": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 4,
+        "8": 9,
+        "9": 4
+      },
+      "f": {
+        "0": 4,
+        "1": 4
+      },
+      "b": {}
     },
     "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/App.vue": {
       "path": "/Users/Marion/Work/Dev/Vue/maplr-vue-test/src/App.vue",
