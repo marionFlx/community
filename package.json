@@ -1,35 +1,60 @@
 {
-  "name": "maplr-vue-test",
+  "name": "maplr-community-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "test-headless:e2e": "vue-cli-service test:e2e --headless",
+    "test:unit": "vue-cli-service test:unit",
+    "eslint": "eslint",
+    "format": "prettier --write \"{src,tests}/**/*.+(vue|ts|js|json|html|css)\"",
+    "postinstall": "yarn format"
   },
   "dependencies": {
-    "vue": "^3.0.0-beta.1"
+    "bootstrap": "4.5.0",
+    "font-awesome": "4.7.0",
+    "moment": "2.25.3",
+    "vue": "3.0.0-beta.14"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "@vue/cli-plugin-e2e-cypress": "~4.3.0",
-    "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-plugin-typescript": "~4.3.0",
-    "@vue/cli-plugin-unit-jest": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
-    "@vue/compiler-sfc": "^3.0.0-beta.1",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "@vue/test-utils": "^2.0.0-alpha.1",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-vue": "^7.0.0-alpha.0",
-    "prettier": "^1.19.1",
-    "typescript": "~3.8.3",
-    "vue-cli-plugin-vue-next": "latest"
+    "@types/jest": "25.2.2",
+    "@typescript-eslint/eslint-plugin": "2.33.0",
+    "@typescript-eslint/parser": "2.33.0",
+    "@vue/cli-plugin-e2e-cypress": "4.3.1",
+    "@vue/cli-plugin-eslint": "4.3.1",
+    "@vue/cli-plugin-typescript": "4.3.1",
+    "@vue/cli-plugin-unit-jest": "4.3.1",
+    "@vue/cli-service": "4.3.1",
+    "@vue/compiler-sfc": "3.0.0-beta.14",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "5.0.2",
+    "@vue/test-utils": "2.0.0-alpha.4",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.0.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-vue": "7.0.0-alpha.2",
+    "flush-promises": "1.0.2",
+    "jest-stare": "2.0.1",
+    "mocha-spec-json-output-reporter": "1.1.7",
+    "prettier": "2.0.5",
+    "typescript": "3.8.3",
+    "vue-cli-plugin-vue-next": "0.1.2"
+  },
+  "jest-stare": {
+    "resultDir": "results",
+    "resultJson": "jest-results.json",
+    "coverageLink": "../coverage/lcov-report/index.html"
+  },
+  "prettier": {
+    "printWidth": 140,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none"
+  },
+  "resolutions": {
+    "vue-jest": "5.0.0-alpha.0"
   }
 }

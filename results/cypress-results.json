@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-23T23:43:31.560Z",
+    "end": "2020-05-23T23:43:32.733Z",
+    "duration": 1173
+  },
+  "suites": [
+    {
+      "title": "Maplr Community",
+      "tests": [
+        {
+          "fullTitle": "Maplr Community should display title on home page",
+          "title": "should display title on home page",
+          "duration": 441,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Maplr Community should display a navbar",
+          "title": "should display a navbar",
+          "duration": 176,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Maplr Community should display a navbar collapsed on small screen",
+          "title": "should display a navbar collapsed on small screen",
+          "duration": 252,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Maplr Community should display a member list",
+          "title": "should display a member list",
+          "duration": 228,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "fullTitle": "Maplr Community should display title on home page",
+      "title": "should display title on home page",
+      "duration": 441,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Maplr Community should display a navbar",
+      "title": "should display a navbar",
+      "duration": 176,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Maplr Community should display a navbar collapsed on small screen",
+      "title": "should display a navbar collapsed on small screen",
+      "duration": 252,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Maplr Community should display a member list",
+      "title": "should display a member list",
+      "duration": 228,
+      "result": "passed",
+      "err": {}
+    }
+  ]
+}

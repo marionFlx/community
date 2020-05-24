@@ -1,3 +1,8 @@
 {
-  "pluginsFile": "tests/e2e/plugins/index.js"
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "reporter": "mocha-spec-json-output-reporter",
+  "reporterOptions": {
+    "fileName": "results/cypress-results.json"
+  },
+  "video": false
 }
