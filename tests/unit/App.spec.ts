@@ -1,52 +1,38 @@
-import { mount } from '@vue/test-utils';
+import { mount, RouterLinkStub } from '@vue/test-utils';
 import { defineComponent, nextTick } from 'vue';
 import App from '@/App.vue';
 import Navbar from '@/components/Navbar.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+
+const mockRouter = createRouter({ history: createWebHistory(), routes: [] });
 
 describe('App.vue', () => {
-  test('renders a title', () => {
-    const wrapper = mount(App);
-    expect(wrapper.get('h1').text()).toBe('Maplr Community');
-  });
-
   test('renders the navbar', () => {
-    const wrapper = mount(App);
+    const wrapper = mount(App, {
+      global: {
+        plugins: [mockRouter],
+        stubs: {
+          RouterView: true,
+          RouterLink: true
+        }
+      }
+    });
     const navbar = wrapper.findComponent(Navbar);
     expect(navbar.exists()).toBeTruthy();
   });
 
-  test('renders the members list inside a Suspense component', async () => {
-    const result = 'Hello';
+  test('renders the router view inside a Suspense component', async () => {
     const wrapper = mount(App, {
       global: {
+        plugins: [mockRouter],
         stubs: {
-          Members: defineComponent({
-            template: '<div>{{ result }}</div>',
-            async setup() {
-              return { result };
-            }
-          })
-        }
-      }
-    });
-    expect(wrapper.html()).toContain('Loading...');
-
-    await nextTick();
-    await nextTick();
-
-    expect(wrapper.html()).toContain('Hello');
-  });
-
-  test('renders the members list inside a Suspense component', async () => {
-    const wrapper = mount(App, {
-      global: {
-        stubs: {
-          Members: defineComponent({
+          RouterView: defineComponent({
             template: '<div>{{ result }}</div>',
             async setup() {
               return { result: 'Hello' };
             }
-          })
+          }),
+          RouterLink: RouterLinkStub
         }
       }
     });
@@ -59,16 +45,18 @@ describe('App.vue', () => {
     expect(wrapper.html()).toContain('Hello');
   });
 
-  test('renders an error if members list does not load', async () => {
+  test('renders an error if router view does not load', async () => {
     const wrapper = mount(App, {
       global: {
+        plugins: [mockRouter],
         stubs: {
-          Members: defineComponent({
+          RouterView: defineComponent({
             template: '<div>Error</div>',
             async setup() {
               await Promise.reject();
             }
-          })
+          }),
+          RouterLink: RouterLinkStub
         }
       }
     });

@@ -2,12 +2,11 @@
   <div>
     <Navbar />
     <div class="container" style="margin-top: 70px;">
-      <h1>Maplr Community</h1>
       <div v-if="error" class="alert alert-danger">
         An error occurred while loading.
       </div>
       <Suspense v-else>
-        <Members />
+        <RouterView />
         <template #fallback>
           Loading...
         </template>
@@ -19,14 +18,12 @@
 <script lang="ts">
 import { defineComponent, onErrorCaptured, ref } from 'vue';
 import Navbar from '@/components/Navbar.vue';
-import Members from '@/views/Members.vue';
 
 export default defineComponent({
   name: 'App',
 
   components: {
-    Navbar,
-    Members
+    Navbar
   },
 
   setup() {

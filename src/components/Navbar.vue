@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand">Maplr Community</a>
+    <RouterLink to="/" class="navbar-brand">Maplr Community</RouterLink>
     <button type="button" class="navbar-toggler" @click="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="navbar" class="navbar-collapse" :class="{ collapse: navbarCollapsed }">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link">Maplrs</a>
+          <RouterLink to="/members" class="nav-link">Members</RouterLink>
         </li>
       </ul>
     </div>
