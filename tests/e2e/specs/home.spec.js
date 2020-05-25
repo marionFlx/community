@@ -26,4 +26,27 @@ describe('Maplr Community', () => {
     cy.get('.navbar-toggler').click();
     cy.get(navbarLink).should('be.visible');
   });
+
+  test('display a link to go the members', () => {
+    const wrapper = homeWrapper();
+
+    // You should have an `a` element to display the link to the races
+    const link = wrapper.findComponent(RouterLinkStub);
+    // The link should have a text
+    expect(link.text()).toContain('members');
+    // The URL of the link is not correct. Maybe you forgot to use `<RouterLink to="/members">`?
+    expect(link.props().to).toBe('/members');
+  });
+
+  test('display a link to go the register page', () => {
+    const wrapper = homeWrapper();
+
+    const link = wrapper.findAllComponents(RouterLinkStub)[1];
+    // You should have an `a` element to display the link to the register page
+    expect(link.exists()).toBeTruthy();
+    // The link should have a text
+    expect(link.text()).toBe('Register');
+    // The URL of the link is not correct. Maybe you forgot to use `<RouterLink to="/register">`?
+    expect(link.props().to).toBe('/register');
+  });
 });

@@ -2,14 +2,10 @@
   <div>
     <Navbar />
     <div class="container" style="margin-top: 70px;">
-      <div v-if="error" class="alert alert-danger">
-        An error occurred while loading.
-      </div>
+      <div v-if="error" class="alert alert-danger">An error occurred while loading.</div>
       <Suspense v-else>
         <RouterView />
-        <template #fallback>
-          Loading...
-        </template>
+        <template #fallback>Loading...</template>
       </Suspense>
     </div>
   </div>

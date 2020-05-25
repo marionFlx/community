@@ -58,7 +58,7 @@ describe('Navbar.vue', () => {
     expect(navbarBrand.props().to).toBe('/');
   });
 
-  test('should display a link to the races page', () => {
+  test('should display a link to the members page', () => {
     const wrapper = navbarWrapper();
     const links = wrapper.findAllComponents(RouterLinkStub);
     expect(links).toHaveLength(2);
